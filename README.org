@@ -23,7 +23,10 @@ Options:
 #+END_SRC
 *** simple example, getting the version numbers:
 #+BEGIN_SRC
-./epc2203.py --get="system/Software Version" --get="system/Boot Revision" --get="system/Software Revision" --get="system/Firmware Name" 
+./epc2203.py --get="system/Software Version" \
+             --get="system/Boot Revision" \
+             --get="system/Software Revision" '
+             --get="system/Firmware Name"
 #+END_SRC
 ** list of all field names
    - "system/Name",
