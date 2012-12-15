@@ -4,8 +4,8 @@ this is a simple script gathering information from epc2203 cable modems.
 ** munin mode
 epc2203 automatically runs as a munin plugin, no configuration necessary. epc2203 has 3 munin modes:
  - default: displaying power levels
- - ending in _freq: reporting frequencies
- - ending in _speed: reporting uplink/downlink speeds
+ - filename ending in _freq: reporting frequencies
+ - filename ending in _speed: reporting uplink/downlink speeds
 
 ** command line mode
 #+BEGIN_SRC
