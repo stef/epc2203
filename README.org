@@ -8,7 +8,7 @@ epc2203 automatically runs as a munin plugin, no configuration necessary. epc220
  - filename ending in _speed: reporting uplink/downlink speeds
 
 ** command line mode
-#+BEGIN_SRC
+#+BEGIN_EXAMPLE
 Usage: epc2203.py [options] | config
 
 Options:
@@ -20,7 +20,7 @@ Options:
   -e, --emta         display emta entries
   -m, --metrics      display metrics
   -g GET, --get=GET  get metric
-#+END_SRC
+#+END_EXAMPLE
 *** simple example, getting the version numbers:
 #+BEGIN_SRC
 ./epc2203.py --get="system/Software Version" --get="system/Boot Revision" --get="system/Firmware Name"
