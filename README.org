@@ -65,3 +65,7 @@ Options:
    - "status/MTA: PacketCable Embedded Interface",
    - "status/LAN: Ethernet Interface",
    - "status/USB: USB Interface"
+
+** dependencies
+   - BeautifulSoup
+   - lxml
