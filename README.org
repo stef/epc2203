@@ -22,12 +22,10 @@ Options:
   -g GET, --get=GET  get metric
 #+END_SRC
 *** simple example, getting the version numbers:
-#+BEGIN_SRC
-./epc2203.py --get="system/Software Version" \
+`./epc2203.py --get="system/Software Version" \
              --get="system/Boot Revision" \
              --get="system/Software Revision" \
-             --get="system/Firmware Name"
-#+END_SRC
+             --get="system/Firmware Name"`
 ** list of all field names
    - "system/Name",
    - "system/Modem Serial Number",
