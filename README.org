@@ -1,0 +1,67 @@
+* epc2203
+this is a simple script gathering information from epc2203 cable modems.
+
+** munin mode
+epc2203 automatically runs as a munin plugin, no configuration necessary. epc2203 has 3 munin modes:
+ - default: displaying power levels
+ - ending in _freq: reporting frequencies
+ - ending in _speed: reporting uplink/downlink speeds
+
+** command line mode
+#+BEGIN_SRC
+Usage: epc2203.py [options] | config
+
+Options:
+  -h, --help         show this help message and exit
+  -a, --all          display all readings
+  -i, --interfaces   display interfaces
+  -s, --static       display static properties
+  -l, --log          display log entries
+  -e, --emta         display emta entries
+  -m, --metrics      display metrics
+  -g GET, --get=GET  get metric
+#+END_SRC
+*** simple example, getting the version numbers:
+#+BEGIN_SRC
+./epc2203.py --get="system/Software Version" --get="system/Boot Revision" --get="system/Software Revision" --get="system/Firmware Name" 
+#+END_SRC
+** list of all field names
+   - "system/Name",
+   - "system/Modem Serial Number",
+   - "system/Cable Modem MAC Address",
+   - "system/Hardware Version",
+   - "system/Software Version",
+   - "system/Vendor",
+   - "system/Boot Revision",
+   - "system/Software Revision",
+   - "system/MTA Serial Number",
+   - "system/Firmware Name",
+   - "system/Firmware Build Time",
+   - "status/Configuration File",
+   - "signal/Modulation",
+   - "system/Receive Power Level",
+   - "system/Transmit Power Level",
+   - "system/Cable Modem Status",
+   - "signal/Downstream Status",
+   - "signal/Channel ID",
+   - "signal/Downstream Frequency",
+   - "signal/Bit Rate",
+   - "signal/Power Level",
+   - "signal/Signal to Noise Ratio",
+   - "signal/Upstream Status",
+   - "signal/Channel ID",
+   - "signal/Upstream Frequency",
+   - "signal/Modulation",
+   - "signal/Symbol Rate",
+   - "signal/Power Level",
+   - "status/Cable Modem Status",
+   - "status/IP Address",
+   - "status/Current Time",
+   - "status/Time Since Last Reset",
+   - "status/Cable Modem Certificate",
+   - "status/Computers Detected",
+   - "status/WAN Isolation",
+   - "status/Cable: Cable Modem Interface",
+   - "status/MTA: PacketCable Embedded Interface",
+   - "status/LAN: Ethernet Interface",
+   - "status/USB: USB Interface"
