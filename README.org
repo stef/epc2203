@@ -25,7 +25,7 @@ Options:
 #+BEGIN_SRC
 ./epc2203.py --get="system/Software Version" \
              --get="system/Boot Revision" \
-             --get="system/Software Revision" '
+             --get="system/Software Revision" \
              --get="system/Firmware Name"
 #+END_SRC
 ** list of all field names
